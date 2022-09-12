@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <!--Home-->
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#port">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="menu-mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#port">Sobre Mim</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="btn-mobile">
+        <ion-icon name="grid-outline"></ion-icon>
+      </div>
+
+    </header>
+
+    <!--incons-->
+
+    <main id="home">
+      <div class="container">
+        <div class="icons">
+          <a href="https://www.instagram.com/danilonascimento_bass/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="https://github.com/daniloxd2022" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/danilo-nascimento-7a7652169"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a href="https://wa.me/5521980004406" target="_blank"
+            ><ion-icon name="logo-whatsapp"></ion-icon
+          ></a>
+        </div>
+
+        <!--title-->
+
+        <div class="title">
+          <h1>Danilo</h1>
+          <h2>Futuro developer</h2>
+          <h3>Full-Stack</h3>
+        </div>
+        <div class="prf">
+          <img src="img/perfil.jpeg" alt="">
+        </div>
+      </div>
+    </main>
+
+    <!--Container-->
+
+    <section id="port">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <div class="cards">
+          <label class="card" for="item-1" id="box-1">
+            <img src="img/card2.jpeg" alt="" />
+            <!--img do slide-->
+            <h1>Valores</h1>
+            <p>"Não nasci para competir com os outros, mas para superar a mim mesmo, assim tendo meu progresso pessoal e profissional "</p>
+          </label>
+
+          <label class="card" for="item-2" id="box-2">
+            <img src="img/card3.jpg" alt="" />
+            <!--img do slide-->
+            <h1>Sobre mim</h1>
+            <p>Estudo pra um futuro, onde a tecnologia faça parte do melhoramento de vida das pessoas</p>         
+          </label>
+
+          <label class="card" for="item-3" id="box-3">
+            <img src="img/card1.jpg" alt="" />
+            <!--img do slide-->
+            <h1>Hoobs</h1>
+            <p>Gosto da cultura otaku(animes,mangas em geral da cultura japonesa) e sou amante da música,estudo e toco contra-baixo em meu tempo livre 😁👍🏻</p>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!--Contatos-->
+
+    <section id="contact">
+      <div class="container">
+        <div class="content-contact">
+          <div class="contact-left">
+            <h1>ENTRE EM CONTATO COMIGO</h1>
+            <div class="linha"></div>
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>danilonascimentooficial2017@gmail.com</span>
+            <ion-icon name="call-outline"></ion-icon>
+            <span>+55 21 98000-4406</span>
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Bangu,Rio de Janeiro, RJ</span>
+          </div>
+          <div class="contact-right">
+            <h1>Preencha o formulário</h1>
+            <div class="linha"></div>
+            <input type="email" placeholder="E-mail" />
+            <input type="text" placeholder="Name" />
+            <textarea placeholder="Message"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      $(document).ready(function () {
+        $(".btn-mobile").click(function () {
+          $(".menu-mobile").slideToggle("slow");
+        });
+      });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+  </body>
+</html>
